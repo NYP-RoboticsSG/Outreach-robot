@@ -30,7 +30,7 @@ def main():
             #     print(event.ev_type, event.code, event.state)
             x_speed = game_control.axis('x')
             y_speed = game_control.axis('y')
-            #print("x_speed : ",x_speed,"y_speed : ",y_speed)
+            print("x_speed : ",x_speed,"y_speed : ",y_speed)
 
             if  abs(x_speed) > 0 or abs(y_speed)>0:
                 if abs(y_speed) > 0 and x_speed == 0: # moving forward
